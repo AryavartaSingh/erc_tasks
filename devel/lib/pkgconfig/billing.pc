@@ -1,0 +1,8 @@
+prefix=/home/aryavarta/t1_bill_ws/devel
+
+Name: billing
+Description: Description of billing
+Version: 0.0.0
+Cflags: -I/home/aryavarta/t1_bill_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/aryavarta/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/aryavarta/t1_bill_ws/src/billing/include/**",
+        "/home/aryavarta/catkin_ws/src/roboticsgroup_gazebo_plugins/include/**",
+        "/home/aryavarta/catkin_ws/src/ros_essentials_cpp/include/**",
+        "/home/aryavarta/catkin_ws/src/universal_robot/ur_kinematics/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

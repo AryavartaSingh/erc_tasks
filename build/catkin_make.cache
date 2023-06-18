@@ -1,0 +1,2 @@
+billing
+-DCATKIN_DEVEL_PREFIX=/home/aryavarta/t1_bill_ws/devel -DCMAKE_INSTALL_PREFIX=/home/aryavarta/t1_bill_ws/install -G Unix Makefiles
