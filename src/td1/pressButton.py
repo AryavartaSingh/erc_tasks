@@ -10,18 +10,12 @@ from std_msgs.msg import Bool
 flag = True
 
 def callback(data, move_group):
+    global flag  
     flag = not data.data
-    while flag:
-        waypoints = []
-        currentPose = move_group.get_current_pose().pose
-        currentPose.position.x += 0.005
-        #waypoints.append(copy.deepcopy(currentPose))
-        (plan, fraction) = move_group.compute_cartesian_path(
-            waypoints, 0.005, 0.0  
-        )  
-        move_group.execute(plan, wait=True)
 
-def press(id, move_group):
+def press(id, move_group): 
+    global flag
+    flag = True  
     move_group.go([radians(0), radians(-120), radians(100), radians(20), radians(90), radians(-90)])
     gripperPos("close")
     move_group.set_pose_reference_frame('base_link')
