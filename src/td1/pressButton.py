@@ -33,7 +33,7 @@ def press(id, move_group):
         move_group.execute(plan, wait=True)
 
         #extend towards button
-        currentPose.position.x += 0.01
+        currentPose.position.x += 0.009
         waypoints = []
         waypoints.append(copy.deepcopy(currentPose))
         (plan, fraction) = move_group.compute_cartesian_path(waypoints, 0.005, 0.0)
